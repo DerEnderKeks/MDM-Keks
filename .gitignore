@@ -25,7 +25,7 @@ temp_*
 *.log
 
 *.conf
-!/example-*.conf
+!/default-*.conf
 
 *.zip
 *.xcf
@@ -35,6 +35,9 @@ temp_*
 
 ## sublime text
 *.sublime-*
+
+## intellij
+/.idea/
 
 ## other
 node_modules/

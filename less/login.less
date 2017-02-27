@@ -4,7 +4,7 @@
 @loginInputHeight: 2.5rem;
 @loginInputWidth:  18rem;
 
-@loginBorderWidth: 1rem;
+@loginBorderWidth: 0rem;
 @loginPadding:     2rem;
 
 @loginInnerHeight: (
@@ -43,8 +43,7 @@
   
   border: @loginBorderWidth solid rgba(20, 20, 20, .66);
   
-  box-shadow: 1px 1px 7px rgba(0,0,0,.5),
-              0 0 3em rgba(0,0,0,.33);
+  // box-shadow: 1px 1px 7px rgba(0,0,0,.5), 0 0 3em rgba(0,0,0,.33);
   
   text-align: left;
   
@@ -75,8 +74,8 @@
   > div {
     right: 0;
     padding: @loginPadding;
-    background-color: #1d1d1d;
-    
+    background-color: rgba(20, 20, 20, .75);
+
     fieldset {
       @bw: 1px;
       position: relative;
@@ -84,7 +83,7 @@
       margin: -@bw -@bw calc(1rem - @bw) -@bw; /* compensate border */
       border-width: @bw;
       border-color: #111 #242424 #242424 #111;
-      background: linear-gradient(to bottom, #131313 0, #191919 100%) repeat scroll 0% 0% transparent;
+      background: rgba(20, 20, 20, .69);
       &:last-child {
         margin-bottom: -@bw;
       }
@@ -98,7 +97,7 @@
     label, button, .dropdown-toggle {
       width: @loginInputHeight;
       text-align: center;
-      background-color: rgba(15,15,15,.7);
+      background-color: rgba(15, 15, 15, .2);
     }
     input, label {
       float: left;

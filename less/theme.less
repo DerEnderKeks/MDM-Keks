@@ -13,6 +13,13 @@
 @highlightBg:       rgba(125, 125, 125, .2);
 
 
+/*** fonts ***/
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url(../fonts/OpenSans-Regular.ttf) format("truetype");
+}
+
 /*** font awesome ***/
 
 @faComment: "\f075";
@@ -56,7 +63,7 @@ body
   overflow: hidden;
   
   font-size: 11px;
-  font-family: "Liberation mono", monospace;
+  font-family: 'Open Sans', sans-serif;
   
   color: #ddd;
   text-shadow: 1px 1px 0 black;
@@ -116,8 +123,8 @@ input
 
 #wrapper {
   position: absolute;
-  // top: 0;
-  top: @panelHeight;
+  top: 0;
+  // top: @panelHeight;
   left: 0;
   right: 0;
   bottom: 0;

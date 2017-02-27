@@ -1,13 +1,18 @@
 {
-  "name": "MDModern",
-  "version": "0.1.0",
+  "name": "MDM-Keks",
+  "version": "0.0.1",
   "license": "GPL-3.0+",
   
   "author": {
-    "name": "Philipp Miller",
-    "url": "http://github.com/philer"
+    "name": "DerEnderKeks",
+    "url": "https://derenderkeks.me"
   },
-  
+
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/DerEnderKeks/MDM-Keks.git"
+  },
+
   "devDependencies": {
     "grunt": "~0.4.5",
     "load-grunt-tasks": "~3.1.0",

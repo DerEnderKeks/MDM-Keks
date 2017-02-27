@@ -1,12 +1,17 @@
 /*** PANEL ***/
 
 @panelHeight: 5rem;
-@panelBgColor: #111;
+// @panelBgColor: #111;
+@panelBgColor: rgba(20, 20, 20, .75);
 @panelBorder: 1px solid #292929;
-@panelShadow: 1px 1px 5px rgba(0,0,0,.5);
+// @panelShadow: 1px 1px 5px rgba(0,0,0,.5);
+@panelShadow: null;
 
 #panel {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   height: @panelHeight;
   line-height: @panelHeight;
   background-color: @panelBgColor;
@@ -28,7 +33,7 @@
     display: inline-block;
     height: @panelHeight;
     line-height: @panelHeight;
-    vertical-align: middle;
+    // vertical-align: middle;
   }
   
   span {
@@ -139,7 +144,7 @@
   height: @defaultLineHeight;
   line-height: @defaultLineHeight;
   box-sizing: content-box;
-  background-color: @panelBgColor;
+  background-color: rgba(20, 20, 20, .42);
   border: @panelBorder;
   border-width: 0 1px;
 }

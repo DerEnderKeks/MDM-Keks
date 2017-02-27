@@ -1,4 +1,4 @@
-module.exports = function(grunt) {
+module.exports = function (grunt) {
   
   "use strict";
   
@@ -28,7 +28,7 @@ module.exports = function(grunt) {
       '<%= dirs.js %>/login.js',
       '<%= dirs.js %>/session.js',
       '<%= dirs.js %>/language.js',
-      '<%= dirs.js %>/slideshow.js',
+      '<%= dirs.js %>/slideshow.js'
       
       // use this if you need info from /etc/lsb-release
       // other than DISTRIB_DESCRIPTION
@@ -46,14 +46,14 @@ module.exports = function(grunt) {
         validthis: true, // $(this) -> "Possible strict mode violation"
         
         globals: {
-          jQuery: true,
-        },
+          jQuery: true
+        }
       },
       all: [
         'Gruntfile.js',
         '<%= jsFiles %>',
-        'console/*.js',
-      ],
+        'console/*.js'
+      ]
     },
     
     concat: {
@@ -61,7 +61,7 @@ module.exports = function(grunt) {
         src: [
           'console/console.js',
           '<%= jsFiles %>',
-          'console/mdm-console.js',
+          'console/mdm-console.js'
         ],
         dest: '<%= dirs.out %>/<%= pkg.name %>.js'
       },
@@ -75,24 +75,24 @@ module.exports = function(grunt) {
       dist: {
         options: {
           namespace: [
-            'console', 'HtmlConsole', 'cnsl',
+            'console', 'HtmlConsole', 'cnsl'
           ],
           methods: [
-            'log', 'warn', 'error', 'info', 'exec', 'formatString',
-          ],
+            'log', 'warn', 'error', 'info', 'exec', 'formatString'
+          ]
         },
         src: [
           // Each file will be overwritten with the assets!
-          '<%= dirs.out %>/*.js',
-        ],
-      },
+          '<%= dirs.out %>/*.js'
+        ]
+      }
     },
     
     uglify: {
       dist: {
         options: {
           banner: '<%= default_banner %>',
-          screwIE8: true,
+          screwIE8: true
         },
         files: {
           // '<%= dirs.out %>/<%= pkg.name %>.js': '<%= jsFiles %>'
@@ -107,21 +107,21 @@ module.exports = function(grunt) {
           compress: true,
           cleancss: true,
           banner: '<%= default_banner %>',
-          strictMath: true,
+          strictMath: true
         },
         files: {
           '<%= dirs.out %>/<%= pkg.name %>.css': '<%= dirs.less %>/theme.less',
-        },
+        }
       },
       dev: {
         options: {
-          strictMath: true,
+          strictMath: true
         },
         files: {
           '<%= dirs.out %>/<%= pkg.name %>.css': [
             'console/console.css',
-            '<%= dirs.less %>/theme.less',
-          ],
+            '<%= dirs.less %>/theme.less'
+          ]
         }
       }
     },
@@ -145,7 +145,7 @@ module.exports = function(grunt) {
     'jshint',
     'concat:dist',
     'removelogging',
-    'uglify:dist',
+    'uglify:dist'
   ]);
   grunt.registerTask('default', 'dev');
 };

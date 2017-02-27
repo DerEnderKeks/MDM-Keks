@@ -1,4 +1,4 @@
-MDModern function reference
+MDM-Keks function reference
 ==========================
 A short summary of all available module functions. Please also refer to comments
 in the source code to see what the individual functions do.
