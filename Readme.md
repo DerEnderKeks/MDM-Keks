@@ -12,7 +12,7 @@ Web developers may be happy to find several well documented JavaScript modules, 
 ![screenshot](https://raw.githubusercontent.com/DerEnderKeks/MDM-Keks/master/screenshot.jpg)
 
 ## Installation
-To use this theme as is, copy the files to a new directory in `/usr/share/mdm/html-themes/`. If you have git, simply type `$ sudo git clone https://github.com/DerEnderKeks/MDM-Keks.git /usr/share/mdm/html-themes/` in a terminal to copy the files directly from github.
+To use this theme as is, copy the files to a new directory in `/usr/share/mdm/html-themes/`. If you have git, simply type `sudo git clone https://github.com/DerEnderKeks/MDM-Keks.git /usr/share/mdm/html-themes/` in a terminal to copy the files directly from github.
 Rename `default-slideshow.conf` to `slideshow.conf` (see Customizing) and you're all set to select the theme in your MDM settings.
 
 If you plan to edit the theme it may be useful to clone to somewhere else and then create a softlink via `ln -s`. In that case you'll have to make sure, that all files and directories can be read by MDM (set permissions to 777 for directories and 666 for files).
