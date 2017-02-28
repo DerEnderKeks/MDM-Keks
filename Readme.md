@@ -29,11 +29,11 @@ If you want to go deeper, read on in the next section.
 ## Modifying and creating your own theme
 
 If you want to edit the JavaScript and CSS source you'll need NPM,
-[Grunt](http://gruntjs.com/) and [LESS](http://lesscss.org/) installed. You may need to run `$ npm install` to get all the node modules used by Grunt.
+[Grunt](http://gruntjs.com/) and [LESS](http://lesscss.org/) installed. You may need to run `npm install` to get all the node modules used by Grunt.
 
 The source files for the theme are located in the `less/` directory. In the `js/` directory you'll find multiple JavaScript modules that allow easy modification and extension. Check DOCUMENTATION.md for information about what modules are available.
 
-Running `$ grunt` or `$ grunt watch` will build a development version with debugging log activated. When you're done editing, run `$grunt dist` to generate a production version without debugging. Don't forget to add new files to Gruntfile.js so they will be included in your builds.
+Running `grunt` or `grunt watch` will build a development version with debugging log activated. When you're done editing, run `grunt dist` to generate a production version without debugging. Don't forget to add new files to Gruntfile.js so they will be included in your builds.
 
 ## Contributing
 
